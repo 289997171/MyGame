@@ -55,7 +55,7 @@ bool MyGame::init()
     auto menu = Menu::create(closeItem, NULL);
 	// 设置按钮坐标
     menu->setPosition(Vec2::ZERO);
-	// 在图层中添加按钮，并设置层级
+	// 在图层中添加按钮，并设置层级，可以理解为Z轴顺序，值越大，表示其显示位置越靠前
     this->addChild(menu, 1);
 
     /////////////////////////////
