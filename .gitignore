@@ -14,6 +14,15 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+proj.wp8-xaml/ARM/*
+proj.wp8-xaml/Debug/*
+proj.wp8-xaml/Release/*
+proj.win32/Debug.win32/*
+proj.win32/Debug.win64/*
+cocos2d/cocos/2d/ARM/*
+cocos2d/cocos/2d/Debug/*
+cocos2d/cocos/2d/Debug.win32/*
+
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/

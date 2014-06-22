@@ -70,8 +70,14 @@ bool MyGame::init()
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
                             origin.y + visibleSize.height - label->getContentSize().height));
 
-    // add the label as a child to this layer 图层中添加该Lable
+    // add the label as a child to this layer 图层中添加该Label
     this->addChild(label, 1);
+
+	auto label2 = LabelTTF::create("I'm Vicky", "Arial", 36);
+	label2->setPosition(Vec2(origin.x + visibleSize.width / 2,
+		origin.y + (visibleSize.height - label->getContentSize().height) / 2));
+
+	this->addChild(label2, 1);
 
     // add "MyGame" splash screen" 添加MyGame的图片精灵
     auto sprite = Sprite::create("MyGame.png");
